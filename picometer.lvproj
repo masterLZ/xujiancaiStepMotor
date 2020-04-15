@@ -62,6 +62,7 @@
 		<Item Name="jog.csv" Type="Document" URL="../../jog.csv"/>
 		<Item Name="Write_lastpoint.vi" Type="VI" URL="../Write_lastpoint.vi"/>
 		<Item Name="f6a77416d2bb488c722f2b3f4279f02.bmp" Type="Document" URL="../../f6a77416d2bb488c722f2b3f4279f02.bmp"/>
+		<Item Name="以众电机控制.vi" Type="VI" URL="../以众电机控制.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
