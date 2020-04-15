@@ -1,3 +1,5 @@
 /*.csv
 /stepMotor/*.csv
 /lib/*.dll
+/*.lvlps
+/*.aliases

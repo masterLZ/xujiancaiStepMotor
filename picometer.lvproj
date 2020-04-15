@@ -16,10 +16,10 @@
 		<Item Name="Device VIs" Type="Folder" URL="../Device VIs">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="main_control.vi" Type="VI" URL="../main_control.vi"/>
+		<Item Name="以众电机控制.vi" Type="VI" URL="../以众电机控制.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="CmdLib.dll" Type="Document" URL="/C/Code/Apps/Utilities/Picomotor/PicomotorApp/Install/Samples/LabVIEW/Model 8742/LabVIEW 2009/CmdLib.dll"/>
-			<Item Name="CmdLib.dll" Type="Document" URL="../CmdLib.dll"/>
+			<Item Name="CmdLib.dll" Type="Document" URL="../../code/CmdLib.dll"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build"/>
 	</Item>
