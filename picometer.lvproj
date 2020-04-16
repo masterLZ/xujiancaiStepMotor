@@ -63,6 +63,9 @@
 		<Item Name="Write_lastpoint.vi" Type="VI" URL="../Write_lastpoint.vi"/>
 		<Item Name="f6a77416d2bb488c722f2b3f4279f02.bmp" Type="Document" URL="../../f6a77416d2bb488c722f2b3f4279f02.bmp"/>
 		<Item Name="以众电机控制.vi" Type="VI" URL="../以众电机控制.vi"/>
+		<Item Name="pic_step1.vi" Type="VI" URL="../pic_step1.vi"/>
+		<Item Name="WriteToTable.vi" Type="VI" URL="../WriteToTable.vi"/>
+		<Item Name="UIDisable.vi" Type="VI" URL="../UIDisable.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
@@ -84,6 +87,9 @@
 				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
 				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
+				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
+				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 			</Item>
 			<Item Name="CmdLib.dll" Type="Document" URL="/C/Code/Apps/Utilities/Picomotor/PicomotorApp/Install/Samples/LabVIEW/Model 8742/LabVIEW 2009/CmdLib.dll"/>
 		</Item>
