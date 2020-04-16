@@ -64,10 +64,13 @@
 		<Item Name="f6a77416d2bb488c722f2b3f4279f02.bmp" Type="Document" URL="../../f6a77416d2bb488c722f2b3f4279f02.bmp"/>
 		<Item Name="以众电机控制.vi" Type="VI" URL="../以众电机控制.vi"/>
 		<Item Name="pic_step1.vi" Type="VI" URL="../pic_step1.vi"/>
-		<Item Name="WriteToTable.vi" Type="VI" URL="../WriteToTable.vi"/>
 		<Item Name="UIDisable.vi" Type="VI" URL="../UIDisable.vi"/>
 		<Item Name="InitPIC.vi" Type="VI" URL="../InitPIC.vi"/>
 		<Item Name="UIEnable.vi" Type="VI" URL="../UIEnable.vi"/>
+		<Item Name="GetPositionAll.vi" Type="VI" URL="../GetPositionAll.vi"/>
+		<Item Name="GetLimitAll.vi" Type="VI" URL="../GetLimitAll.vi"/>
+		<Item Name="MotionDoneAll.vi" Type="VI" URL="../MotionDoneAll.vi"/>
+		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
@@ -94,6 +97,7 @@
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 			</Item>
 			<Item Name="CmdLib.dll" Type="Document" URL="/C/Code/Apps/Utilities/Picomotor/PicomotorApp/Install/Samples/LabVIEW/Model 8742/LabVIEW 2009/CmdLib.dll"/>
+			<Item Name="KeyGray_normalbool.vi" Type="VI" URL="../KeyGray_normalbool.vi"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="以众应用程序" Type="EXE">
