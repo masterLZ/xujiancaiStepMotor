@@ -66,6 +66,8 @@
 		<Item Name="pic_step1.vi" Type="VI" URL="../pic_step1.vi"/>
 		<Item Name="WriteToTable.vi" Type="VI" URL="../WriteToTable.vi"/>
 		<Item Name="UIDisable.vi" Type="VI" URL="../UIDisable.vi"/>
+		<Item Name="InitPIC.vi" Type="VI" URL="../InitPIC.vi"/>
+		<Item Name="UIEnable.vi" Type="VI" URL="../UIEnable.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
