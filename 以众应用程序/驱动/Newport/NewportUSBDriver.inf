@@ -1,0 +1,99 @@
+; Installation file (.inf) for the Newport USB Driver
+; Copyright (c) 2017 Newport
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %ManufacturerName%
+CatalogFile = NewportUSBDriver.cat
+DriverVer   = 05/07/2018, 5.0.7
+
+; Use the WinUSB class and GUID
+Class       = USBDevice
+ClassGUID   = {88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+
+; ========== Manufacturer/Models sections ===========
+
+[Manufacturer]
+%ManufacturerName% = DeviceList,NTx86,NTamd64
+
+; x86 platform
+[DeviceList.NTx86]
+"Newport Power Meter" = USB_Install, USB\VID_104D&PID_CEC7
+"Newport LED Driver [Default]" = USB_Install, USB\VID_104D&PID_1002
+"Newport LED Driver" = USB_Install, USB\VID_104D&PID_1003
+"Newport Laser Diode Driver [Default]" = USB_Install, USB\VID_104D&PID_1004
+"Newport Laser Diode Driver" = USB_Install, USB\VID_104D&PID_1005
+"Newport Temperature controller [Default]" = USB_Install, USB\VID_104D&PID_1007
+"Newport Temperature Controller" = USB_Install, USB\VID_104D&PID_1008
+"Newport Laser Diode and Temperature Controller" = USB_Install, USB\VID_104D&PID_1009
+"New Focus Tunable Laser Controller" = USB_Install, USB\VID_104D&PID_100A
+"New Focus TLB-6800 Tunable Laser Controller" = USB_Install, USB\VID_104D&PID_100D
+"New Focus TA-7600-LN Tapered Amplifier Controller" = USB_Install, USB\VID_104D&PID_100E
+"New Focus Wavemeter" = USB_Install, USB\VID_104D&PID_100F
+"New Focus Picomotor Controller" = USB_Install, USB\VID_104D&PID_4000
+"Newport ST-300 Smart Table Controller" = USB_Install, USB\VID_104D&PID_2002
+"Newport AI-6 Guardian Active Isolation Controller" = USB_Install, USB\VID_104D&PID_2003
+
+; x64 platform
+[DeviceList.NTamd64]
+"Newport Power Meter" = USB_Install, USB\VID_104D&PID_CEC7
+"Newport LED Driver [Default]" = USB_Install, USB\VID_104D&PID_1002
+"Newport LED Driver" = USB_Install, USB\VID_104D&PID_1003
+"Newport Laser Diode Driver [Default]" = USB_Install, USB\VID_104D&PID_1004
+"Newport Laser Diode Driver" = USB_Install, USB\VID_104D&PID_1005
+"Newport Temperature controller [Default]" = USB_Install, USB\VID_104D&PID_1007
+"Newport Temperature Controller" = USB_Install, USB\VID_104D&PID_1008
+"Newport Laser Diode and Temperature Controller" = USB_Install, USB\VID_104D&PID_1009
+"New Focus Tunable Laser Controller" = USB_Install, USB\VID_104D&PID_100A
+"New Focus TLB-6800 Tunable Laser Controller" = USB_Install, USB\VID_104D&PID_100D
+"New Focus TA-7600-LN Tapered Amplifier Controller" = USB_Install, USB\VID_104D&PID_100E
+"New Focus Wavemeter" = USB_Install, USB\VID_104D&PID_100F
+"New Focus Picomotor Controller" = USB_Install, USB\VID_104D&PID_4000
+"Newport ST-300 Smart Table Controller" = USB_Install, USB\VID_104D&PID_2002
+"Newport AI-6 Guardian Active Isolation Controller" = USB_Install, USB\VID_104D&PID_2003
+
+; ========== Class definition ===========
+
+[ClassInstall32]
+AddReg = ClassInstall_AddReg
+
+[ClassInstall_AddReg]
+HKR,,,,%ClassName%
+HKR,,NoInstallClass,,1
+HKR,,IconPath,%REG_MULTI_SZ%,"%systemroot%\system32\setupapi.dll,-20"
+HKR,,LowerLogoVersion,,5.2
+
+; =================== Installation ===================
+
+[USB_Install]
+Include = winusb.inf
+Needs   = WINUSB.NT
+
+[USB_Install.Services]
+Include = winusb.inf
+Needs   = WINUSB.NT.Services
+
+[USB_Install.Wdf]
+KmdfService = WINUSB, WinUsb_Install
+
+[WinUsb_Install]
+KmdfLibraryVersion = 1.9
+
+[USB_Install.HW]
+AddReg = Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUIDs,0x10000,"{56AC4E2C-9D3B-4a6c-BF25-B3BD6E44FC00}"
+
+[USB_Install.CoInstallers]
+AddReg = CoInstallers_AddReg
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01009.dll,WdfCoInstaller","WinUsbCoInstaller2.dll"
+
+; =================== Strings ===================
+
+[Strings]
+ManufacturerName = "Newport Corporation"
+ClassName = "Universal Serial Bus devices"
+REG_MULTI_SZ = 0x00010000
