@@ -138,7 +138,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4DF8F6AA-04FE-43E0-AC1C-09CED56D8910}</Property>
-				<Property Name="Bld_version.build" Type="Int">28</Property>
+				<Property Name="Bld_version.build" Type="Int">32</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">以众电机控制.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../以众应用程序/以众电机控制.exe</Property>
@@ -242,7 +242,7 @@
 				<Property Name="INST_includeError" Type="Bool">false</Property>
 				<Property Name="INST_language" Type="Int">2052</Property>
 				<Property Name="INST_productName" Type="Str">以众电机控制</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.16</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.19</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">18008012</Property>
 				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
