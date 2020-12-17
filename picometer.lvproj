@@ -72,6 +72,9 @@
 		<Item Name="MotionDoneAll.vi" Type="VI" URL="../MotionDoneAll.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
 		<Item Name="new.vi" Type="VI" URL="../../TMCM351/new.vi"/>
+		<Item Name="TMCM351-ReadAnalogIO.vi" Type="VI" URL="../stepMotor/TMCM351-ReadAnalogIO.vi"/>
+		<Item Name="TMCM351-ReadAnalogIOAll.vi" Type="VI" URL="../stepMotor/TMCM351-ReadAnalogIOAll.vi"/>
+		<Item Name="TMCM351-SetAnalogueVoltage.vi" Type="VI" URL="../stepMotor/TMCM351-SetAnalogueVoltage.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
